@@ -1,0 +1,12 @@
+footer {
+  background: linear-gradient(90deg, #4b6cb7 0%, #182848 100%);
+}
+
+h5 {
+  color: #f3f3f3;
+}
+
+a.text-muted,
+small.text-muted {
+  color: #c3c3c3 !important;
+}
