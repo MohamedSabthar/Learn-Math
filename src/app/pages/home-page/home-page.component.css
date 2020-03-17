@@ -5,9 +5,23 @@
   position: 50% 50%;
 }
 
+.font-1 {
+  font-size: 1.4rem;
+}
+
+.quote {
+  padding-top: 30px;
+
+  /* text-shadow: 1px 1px rgb(75, 88, 98); */
+}
+
 @media (min-width: 576px) {
   .hero {
     height: 40vh;
+  }
+
+  .quote {
+    font-size: 1rem;
   }
 }
 
@@ -15,11 +29,19 @@
   .hero {
     height: 60vh;
   }
+
+  .quote {
+    font-size: 1.3rem;
+  }
 }
 
 @media (min-width: 992px) {
   .hero {
     height: 60vh;
+  }
+
+  .quote {
+    font-size: 1.6rem;
   }
 }
 
@@ -27,4 +49,11 @@
   .hero {
     height: 100vh;
   }
+  .quote {
+    font-size: 2rem;
+  }
+}
+
+.img-fluid {
+  border-radius: 70px !important;
 }

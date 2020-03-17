@@ -1,5 +1,88 @@
 <app-header></app-header>
 
-<div class="hero"></div>
+<div class="hero">
+  <div class="text-center">
+    <p class="quote ">
+      If you can't learn the way they teach<br />
+      We teach the way you learn.
+    </p>
+  </div>
+</div>
+<div class="row d-flex justify-content-center py-4">
+  <app-grade-card *ngFor="let gAndD of gradesAndDescriptions">
+    <ng-container class="title"> {{ gAndD.grade }}</ng-container>
+    <ng-container class="body">{{ gAndD.description }}</ng-container>
+  </app-grade-card>
+</div>
+
+<div>
+  <div class="d-flex justify-content-center pt-3">
+    <h1 class="display-4 text-center">How to join our Maths journey</h1>
+  </div>
+
+  <!-- **Banner** -->
+  <div class="row mt-3 ">
+    <div class="col-md-5 col-12 text-center">
+      <img
+        class="img-fluid display-image p-5"
+        src="../../assets/img/home-displays/1.jpg"
+        alt="..."
+      />
+    </div>
+    <div class="col-md-7 col-12 align-self-center">
+      <h1 class="text-center mb-3">1. Explore our maths programmes</h1>
+      <p class="px-5 font-1">
+        We have helped tens of thousands of children succeed in Maths. Our
+        programmes provide the benefit of one-to-one tuition, plus all the
+        relevant and up-to date Curriculum resources for your child's age group,
+        helping to deliver great results in school.
+      </p>
+    </div>
+  </div>
+  <!-- **endof-Banner** -->
+
+  <!-- **Banner** -->
+  <div class="row mt-3 ">
+    <div class="col-md-7 col-12 order-12 order-md-1 align-self-center">
+      <h1 class="text-center mb-3">2. Try our free session</h1>
+      <p class="px-5 font-1">
+        We want to make it really easy for you to experience Matr. Create a free
+        account so you can book a one-to-one taster session with one of our
+        Maths tutors and access a selection of our wonderful maths resources.
+      </p>
+    </div>
+    <div class="col-md-5 order-1 order-md-12 col-12 text-center">
+      <img
+        class="img-fluid display-image p-5"
+        src="../../assets/img/home-displays/freesession.jpg"
+        alt="..."
+      />
+    </div>
+  </div>
+  <!-- **endof-Banner** -->
+
+  <!-- **Banner** -->
+  <div class="row mt-3 ">
+    <div class="col-md-5 col-12 text-center">
+      <img
+        class="img-fluid display-image p-5"
+        src="../../assets/img/home-displays/joinus.jpg"
+        alt="..."
+      />
+    </div>
+    <div class="col-md-7 col-12 align-self-center">
+      <h1 class="text-center mb-3">
+        3. Enroll with the plan that suits your child
+      </h1>
+      <p class="px-5 font-1">
+        We have helped tens of thousands of children succeed in Maths. Our
+        programmes provide the benefit of one-to-one tuition, plus all the
+        relevant and up-to date Curriculum resources for your child's age group,
+        helping to deliver great results in school.
+      </p>
+    </div>
+  </div>
+  <!-- **endof-Banner** -->
+</div>
 
 <app-footer></app-footer>
